@@ -1,0 +1,13 @@
+# MCP Server Authentication Standards
+jwt:
+  issuer: "your-mcp-server"
+  audience: ["client-app"]
+  expiration: 3600 # 1 hour
+  algorithm: RS256
+  key_rotation: 30 # days
+
+api_keys:
+  length: 32
+  prefix: "mcp_"
+  rotation: 90 # days
+  storage: vault # hashed

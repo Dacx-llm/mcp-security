@@ -1,0 +1,12 @@
+## GitHub MCP Server Security Standards
+- **Vault Requirements**:
+  - Path: `mcp/github`
+  - Key rotation every 30 days
+- **Rate Limiting**:
+  - Global: 5000 requests/hour
+  - Per-endpoint thresholds
+- **Audit Fields**:
+  - Timestamp
+  - Endpoint
+  - Status code
+  - Request size

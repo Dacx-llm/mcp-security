@@ -1,0 +1,14 @@
+# MCP Audit Log Requirements
+log_fields:
+  required:
+    - timestamp
+    - user_id
+    - endpoint
+    - status_code
+    - request_size
+    - response_size
+  sensitive_field_masking: true
+
+retention:
+  active_logs: 30 # days
+  archived_logs: 365 # days

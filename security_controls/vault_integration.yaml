@@ -1,0 +1,12 @@
+# Based on your github/config.json vaultPath
+vault:
+  path: "mcp/github"
+  required_keys:
+    - api_key
+    - app_id
+  rotation: 
+    automated: true
+    frequency: 30 # days
+  access_control:
+    - role: mcp-server
+      permissions: ["read"]

@@ -1,0 +1,13 @@
+{
+  "rateLimiting": {
+    "enabled": true,
+    "strategy": "token-bucket",
+    "rules": [
+      {
+        "endpoint": "/user/*",
+        "requestsPerHour": 5000,
+        "burstCapacity": 100
+      }
+    ]
+  }
+}

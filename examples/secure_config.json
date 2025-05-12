@@ -1,0 +1,12 @@
+{
+  "mcp_server": {
+    "rate_limiting": {
+      "enabled": true,
+      "requests_per_minute": 300
+    },
+    "cors": {
+      "allowed_origins": ["https://yourdomain.com"],
+      "allow_credentials": false
+    }
+  }
+}
